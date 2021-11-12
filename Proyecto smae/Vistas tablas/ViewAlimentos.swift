@@ -35,18 +35,19 @@ class ViewAlimentos: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return celda
     }
     
+    //Envío de datos hacia la vista de Datos de los alimentos
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is InfoAlimentoviewControler{
             let lugar = tablaAlimentos.indexPathForSelectedRow!.row
             let alimentoEspecifico = listaDeAlimentos![lugar]
             let caracteristicas = segue.destination as? InfoAlimentoviewControler
             caracteristicas?.cantidad = alimentoEspecifico.cantidad
-             caracteristicas?.peso = alimentoEspecifico.peso
-             caracteristicas?.energía = String(alimentoEspecifico.kcal) + " kcal"
-             caracteristicas?.proteinas = String(alimentoEspecifico.proteinas) + " g"
-             caracteristicas?.lipidos = String(alimentoEspecifico.lipidos) + " g"
-             caracteristicas?.carbohidratos = String(alimentoEspecifico.carbohidratos) + " g"
-             caracteristicas?.macronitrimentos = alimentoEspecifico.micronutrimento
+            caracteristicas?.peso = alimentoEspecifico.peso
+            caracteristicas?.energía = String(alimentoEspecifico.kcal) + " kcal"
+            caracteristicas?.proteinas = String(alimentoEspecifico.proteinas) + " g"
+            caracteristicas?.lipidos = String(alimentoEspecifico.lipidos) + " g"
+            caracteristicas?.carbohidratos = String(alimentoEspecifico.carbohidratos) + " g"
+            caracteristicas?.macronitrimentos = alimentoEspecifico.micronutrimento
             caracteristicas?.nombreAlimento =  alimentoEspecifico.nombreElelemto
         }
     }

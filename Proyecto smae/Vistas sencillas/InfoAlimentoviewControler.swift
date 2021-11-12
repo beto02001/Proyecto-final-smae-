@@ -10,34 +10,25 @@ import SwiftUI
 
 class InfoAlimentoviewControler: UIViewController {
 
-
     @IBOutlet var coleccionDeViews:[UIView]!
     @IBOutlet var arregloLabels:[UILabel]!
     @IBOutlet weak var imgAlimento: UIImageView!
     @IBOutlet weak var tituloAlimento: UILabel!
-    var cantidad = ""
-    var peso = ""
-    var energía = ""
-    var proteinas = ""
-    var lipidos = ""
-    var carbohidratos = ""
-    var macronitrimentos = ""
-    var nombreAlimento = ""
-    
+    var cantidad = "", peso = "", energía = "", proteinas = "", lipidos = ""
+    var carbohidratos = "", macronitrimentos = "", nombreAlimento = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        arregloLabels[0].text = cantidad
-        arregloLabels[1].text = peso
-        arregloLabels[2].text = energía
-        arregloLabels[3].text = proteinas
-        arregloLabels[4].text = lipidos
-        arregloLabels[5].text = carbohidratos
-        arregloLabels[6].text = macronitrimentos
+        let datosali : [String] = [cantidad,peso, energía, proteinas, lipidos, carbohidratos, macronitrimentos]
+        
+        for i in 0..<datosali.count{
+            arregloLabels[i].text = datosali[i]
+        }
+        
+        navigationItem.title = nombreAlimento
         imgAlimento.image = UIImage(named: nombreAlimento)
         tituloAlimento.text = nombreAlimento
         esquinaRedondeadaySombra()
-        
     }
     
     func esquinaRedondeadaySombra(){

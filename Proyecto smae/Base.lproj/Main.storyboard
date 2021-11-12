@@ -20,35 +20,34 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZR1-Qb-OID">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EQUIPO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDN-E5-SI0">
-                                        <rect key="frame" x="148" y="57" width="134" height="42"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="unam" translatesAutoresizingMaskIntoConstraints="NO" id="DXo-D4-Cfs">
-                                        <rect key="frame" x="20" y="31" width="106" height="94"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="106" id="GiP-VF-Lkk"/>
-                                        </constraints>
-                                    </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="fes" translatesAutoresizingMaskIntoConstraints="NO" id="97T-HN-3qP">
                                         <rect key="frame" x="290" y="28" width="107" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="107" id="LSQ-pI-2C5"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EQUIPO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDN-E5-SI0">
+                                        <rect key="frame" x="140" y="62" width="134" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="mac" translatesAutoresizingMaskIntoConstraints="NO" id="E6r-ie-ZRF">
+                                        <rect key="frame" x="17" y="34" width="115" height="104"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="115" id="E6i-c4-CqH"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="97T-HN-3qP" secondAttribute="trailing" constant="17" id="EyF-jW-q2r"/>
-                                    <constraint firstItem="DXo-D4-Cfs" firstAttribute="leading" secondItem="ZR1-Qb-OID" secondAttribute="leading" constant="20" id="LSd-QM-6d0"/>
+                                    <constraint firstItem="MDN-E5-SI0" firstAttribute="leading" secondItem="E6r-ie-ZRF" secondAttribute="trailing" constant="8" id="I33-w9-Ye8"/>
+                                    <constraint firstItem="MDN-E5-SI0" firstAttribute="centerY" secondItem="97T-HN-3qP" secondAttribute="centerY" id="Knj-23-8jt"/>
                                     <constraint firstItem="97T-HN-3qP" firstAttribute="top" secondItem="ZR1-Qb-OID" secondAttribute="top" constant="28" id="Uqr-LV-lVI"/>
-                                    <constraint firstAttribute="trailing" secondItem="MDN-E5-SI0" secondAttribute="trailing" constant="132" id="YG8-tR-0or"/>
-                                    <constraint firstItem="DXo-D4-Cfs" firstAttribute="centerY" secondItem="MDN-E5-SI0" secondAttribute="centerY" id="Ytf-sC-wgl"/>
-                                    <constraint firstItem="MDN-E5-SI0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DXo-D4-Cfs" secondAttribute="trailing" symbolic="YES" id="pvy-lp-oJ6"/>
-                                    <constraint firstItem="DXo-D4-Cfs" firstAttribute="top" secondItem="ZR1-Qb-OID" secondAttribute="top" constant="31" id="qv4-6T-6xX"/>
-                                    <constraint firstAttribute="bottom" secondItem="DXo-D4-Cfs" secondAttribute="bottom" constant="41" id="vvL-nL-bR6"/>
+                                    <constraint firstAttribute="trailing" secondItem="MDN-E5-SI0" secondAttribute="trailing" constant="140" id="YG8-tR-0or"/>
+                                    <constraint firstItem="E6r-ie-ZRF" firstAttribute="bottom" secondItem="97T-HN-3qP" secondAttribute="bottom" id="rdL-y2-Ky7"/>
+                                    <constraint firstItem="E6r-ie-ZRF" firstAttribute="top" secondItem="ZR1-Qb-OID" secondAttribute="top" constant="34" id="so2-hU-Ziq"/>
                                     <constraint firstItem="97T-HN-3qP" firstAttribute="centerY" secondItem="ZR1-Qb-OID" secondAttribute="centerY" id="zut-ji-PmV"/>
                                 </constraints>
                             </view>
@@ -695,8 +694,8 @@
         <image name="Cereales" width="338" height="136"/>
         <image name="fes" width="1280" height="1491"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="mac" width="512" height="289"/>
         <image name="more" width="1341" height="1341"/>
-        <image name="unam" width="1024" height="1151"/>
         <image name="yo" width="738" height="739"/>
         <namedColor name="amarilloOscuro">
             <color red="0.58399999141693115" green="0.5690000057220459" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

@@ -72,23 +72,55 @@
 		D13DC06C273C5CD300A4CA04 /* Proyecto smae */ = {
 			isa = PBXGroup;
 			children = (
-				D16FBF62273C7E9500B5CA56 /* VistaCelda.swift */,
-				D12F1334273C924000615AFD /* VistaCeldaAlimentos.swift */,
+				D1AF1D45273E21E700D93F1D /* Recursos */,
+				D1AF1D44273E21C900D93F1D /* Vistas sencillas */,
+				D1AF1D43273E21A300D93F1D /* Vistas tablas */,
+				D1AF1D42273E216A00D93F1D /* Vistas Celdas */,
 				D13DC085273C5DB200A4CA04 /* Alimentos.swift */,
 				D13DC083273C5D7D00A4CA04 /* datos.swift */,
-				D13DC081273C5D6C00A4CA04 /* SMAE.json */,
 				D13DC06D273C5CD300A4CA04 /* AppDelegate.swift */,
 				D13DC06F273C5CD300A4CA04 /* SceneDelegate.swift */,
-				D13DC071273C5CD300A4CA04 /* ViewController.swift */,
 				D13DC073273C5CD300A4CA04 /* Main.storyboard */,
 				D13DC076273C5CD300A4CA04 /* Assets.xcassets */,
 				D13DC078273C5CD300A4CA04 /* LaunchScreen.storyboard */,
 				D13DC07B273C5CD300A4CA04 /* Info.plist */,
-				D16FBF64273C7FA800B5CA56 /* ViewAlimentos.swift */,
-				D12F1336273CAD2200615AFD /* InfoAlimentoviewControler.swift */,
-				D1AE3335273CFED6009F98C1 /* ViewNosotros.swift */,
 			);
 			path = "Proyecto smae";
+			sourceTree = "<group>";
+		};
+		D1AF1D42273E216A00D93F1D /* Vistas Celdas */ = {
+			isa = PBXGroup;
+			children = (
+				D16FBF62273C7E9500B5CA56 /* VistaCelda.swift */,
+				D12F1334273C924000615AFD /* VistaCeldaAlimentos.swift */,
+			);
+			path = "Vistas Celdas";
+			sourceTree = "<group>";
+		};
+		D1AF1D43273E21A300D93F1D /* Vistas tablas */ = {
+			isa = PBXGroup;
+			children = (
+				D13DC071273C5CD300A4CA04 /* ViewController.swift */,
+				D16FBF64273C7FA800B5CA56 /* ViewAlimentos.swift */,
+			);
+			path = "Vistas tablas";
+			sourceTree = "<group>";
+		};
+		D1AF1D44273E21C900D93F1D /* Vistas sencillas */ = {
+			isa = PBXGroup;
+			children = (
+				D1AE3335273CFED6009F98C1 /* ViewNosotros.swift */,
+				D12F1336273CAD2200615AFD /* InfoAlimentoviewControler.swift */,
+			);
+			path = "Vistas sencillas";
+			sourceTree = "<group>";
+		};
+		D1AF1D45273E21E700D93F1D /* Recursos */ = {
+			isa = PBXGroup;
+			children = (
+				D13DC081273C5D6C00A4CA04 /* SMAE.json */,
+			);
+			path = Recursos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
