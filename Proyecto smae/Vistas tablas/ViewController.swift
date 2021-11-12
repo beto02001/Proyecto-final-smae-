@@ -40,7 +40,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             informacion?.nombreGrupo = alimentos[renglon].grupo
         }
     }
-    
-    
 }
 
