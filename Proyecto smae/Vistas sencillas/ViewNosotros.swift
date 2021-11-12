@@ -27,7 +27,6 @@ class ViewNosotros: UIViewController {
         }
     
         for vista in coleccionDeViews{
-            
             vista.layer.cornerRadius = 20
             vista.layer.shadowColor = UIColor.gray.cgColor
             vista.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
