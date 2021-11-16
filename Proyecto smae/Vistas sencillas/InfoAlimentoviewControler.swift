@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SwiftUI
 
 class InfoAlimentoviewControler: UIViewController {
 
@@ -32,13 +31,16 @@ class InfoAlimentoviewControler: UIViewController {
     }
     
     func esquinaRedondeadaySombra(){
-        for vista in coleccionDeViews{
-            vista.layer.cornerRadius = 20
-            vista.layer.shadowColor = UIColor.gray.cgColor
-            vista.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-            vista.layer.shadowRadius = 14.0
-            vista.layer.shadowOpacity = 1
-        }
+        UIView.animate(withDuration: 4, delay: 0.0, options: [UIView.AnimationOptions.repeat, UIView.AnimationOptions.autoreverse], animations: {
+            for vista in self.coleccionDeViews{
+                vista.layer.cornerRadius = 20
+                vista.layer.shadowColor = UIColor.yellow.cgColor
+                vista.layer.shadowColor = UIColor.purple.cgColor
+                vista.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+                vista.layer.shadowRadius = 10.0
+                vista.layer.shadowOpacity = 1
+            }
+        }, completion: nil)
     }
-
 }
+                       

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct Datos: Codable, Identifiable{
     let id: Int
