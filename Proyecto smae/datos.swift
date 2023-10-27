@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct Datos: Codable, Identifiable{
+struct Datos: Codable, Identifiable {
     let id: Int
     let grupo: String
     let nombre: String
     let elementos: [Elementos]
-    
-    struct Elementos: Codable, Identifiable{
+
+    struct Elementos: Codable, Identifiable {
         var id: Int
         let nombreElelemto: String
         let cantidad: String

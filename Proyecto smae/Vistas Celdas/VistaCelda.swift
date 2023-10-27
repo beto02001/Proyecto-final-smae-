@@ -11,7 +11,7 @@ class VistaCelda: UITableViewCell {
 
     @IBOutlet weak var imagenCeldaGrupo: UIImageView!
     @IBOutlet weak var textoCeldaGrupo: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

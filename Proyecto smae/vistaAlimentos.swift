@@ -7,14 +7,13 @@
 
 import UIKit
 
-class vistaAlimentos: UIViewController {
+class VistaAlimentos: UIViewController {
 
-    override func viewDidLoad() {
+    func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation

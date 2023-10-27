@@ -8,7 +8,7 @@
 import UIKit
 
 class VistaCeldaAlimentosTableViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var imgAlimento: UIImageView!
     @IBOutlet weak var imgGrupo: UIImageView!
     @IBOutlet weak var nombreAlimento: UILabel!
@@ -16,9 +16,9 @@ class VistaCeldaAlimentosTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        self.imgGrupo.layer.cornerRadius = self.imgGrupo.frame.size.height / 2;
-        self.imgGrupo.clipsToBounds = true;
+
+        self.imgGrupo.layer.cornerRadius = self.imgGrupo.frame.size.height / 2
+        self.imgGrupo.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

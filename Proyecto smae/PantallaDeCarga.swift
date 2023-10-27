@@ -9,12 +9,11 @@ import UIKit
 
 class PantallaDeCarga: UIViewController {
 
-    override func viewDidLoad() {
+    func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
 
     /*
     // MARK: - Navigation
